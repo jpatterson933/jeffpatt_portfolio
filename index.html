@@ -15,9 +15,9 @@
             <nav class="NAVwrapper">
                 <ul style="list-style: none;">
                     <li class="float-left"><button class="name">Jeffery W. Patterson</button></li>
-                    <li class="float-right"><button class="contactbutton">Contact</button></li>
-                    <li class="float-right"><button class="projectsbutton">Projects</button></li>
-                    <li class="float-right"><button class="aboutbutton">About</button></li>
+                    <li class="float-right"><button class="headerbutton"><a href="#contact-id-link">Contact</a></button></li>
+                    <li class="float-right"><button class="headerbutton"><a href="#projects-id-link">Projects</a></button></li>
+                    <li class="float-right"><button class="headerbutton"><a href="#about-id-link">About</a></button></li>
                 </ul>
             </nav>
 
@@ -29,8 +29,11 @@
 
         <section class="main-div-wrap">
             <aside class="float-left">
-                <div class="about">
+                <div id="about-id-link" class="about">
                     <h1 class="about-title">About</h1>
+                        <a href="https://www.instagram.com/i_shred/" target="_blank">
+                            <img class="profile-photo" src="./css/assets/profile_photo.jpg" alt="Picture of Jeffery Patterson">
+                        </a>
                 </div>
             </aside>
             <aside class="float-left">
@@ -63,7 +66,7 @@
                 </div>
             </aside>
         </section>
-        <section class="project-div-wrap">
+        <section id="projects-id-link" class="project-div-wrap">
             <aside class="float-left">
                 <div class="project">
                     <h1 class="aside-project-title">Projects</h1>
@@ -80,13 +83,13 @@
             </aside>
         </section>
     </main>
-    <footer class="footer-wrapper">
+    <footer id="contact-id-link" class="footer-wrapper">
         <h1 class="footer-contact-title">Contact</h1>
         <ul style="list-style: none;" class="footer-button-display">
-            <li><button class="footer-button">Email</button></li>
-            <li><button class="footer-button">StackOverflow</button></li>
-            <li><button class="footer-button">Linkedin</button></li>
-            <li><button class="footer-button">Github</button></li>
+            <li><button class="footer-button"><a href="mailto:jpatterson933@ucla.edu">Email</a></button></li>
+            <li><button class="footer-button"><a href="https://stackoverflow.com/users/15040337/pjeff61" target="_blank">Stack Overflow</a></button></li>
+            <li><button class="footer-button"><a href="https://www.linkedin.com/in/jefferywpatterson/" target="_blank">linkedin</a></button></li>
+            <li><button class="footer-button"><a href="https://github.com/jpatterson933" target="_blank">Github</a></button></li>
         </ul>
     </footer>
     

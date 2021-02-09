@@ -2,6 +2,7 @@
 /* overall styling variables created for my css file */
 :root {
     --MAINshadow: rgb(60 64 67 / 30%) 0px 1px 2px 0px, rgb(60 64 67 / 15%) 0px 1px 3px 1px;
+    --SECONDARYshadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
     --BUTTONcolor: rgb(150, 218, 272);
     --ASIDEtitles: rgb(150, 218, 272, 0.5);
     --ASIDEcontent: rgb(177, 226, 250);
@@ -32,6 +33,12 @@
     justify-content: flex-end;
 }
 
+/* link classes to adjust link formating */
+a {
+    color: white;
+}
+
+
 /* beg top nav bar */
 .section_1 {
     border-bottom: 1px solid black;
@@ -46,7 +53,8 @@
     color: white;
     font-weight: 400;
 }
-.contactbutton {
+
+.headerbutton {
     background-color: var(--BUTTONcolor);
     padding: .5em 1.5em;
     margin-right: 10em;
@@ -55,23 +63,9 @@
     color: white;
     font-weight: 400;
 }
-.projectsbutton {
-    background-color: var(--BUTTONcolor);
-    padding: .5em 1.5em;
-    margin-right: 10em;
-    border-radius: 3px;
-    box-shadow: var(--MAINshadow);
-    color: white;
-    font-weight: 400;
-}
-.aboutbutton {
-    background-color: var(--BUTTONcolor);
-    padding: .5em 1.5em;
-    margin-right: 10em;
-    border-radius: 3px;
-    box-shadow: var(--MAINshadow);
-    color: white;
-    font-weight: 400;
+.headerbutton:hover {
+    box-shadow: var(--SECONDARYshadow);
+    transform: scale(1.5);
 }
 /* end nav bar */
 
@@ -112,7 +106,7 @@ on hover shadow -- box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0
 /* beginning of about section */
 .about {
     background-color: var(--ASIDEtitles);
-    padding: 0 7em 10em 12em;
+    padding: 0 6em 3em 12em;
     border-right: 1px solid black;
     border-bottom: 1px solid black;
 }
@@ -120,7 +114,21 @@ on hover shadow -- box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0
     color: black;
     font-size: 70px;
     margin: 0em 0em 0em -1em;
-    padding: 2.5em 0em 0em 0em;
+    padding-left: 0px;
+    padding-top: 27px;
+}
+.profile-photo {
+    padding: 1em;
+    margin-left: -82px;
+    margin-top: 54px;
+    width: 170px;
+    height: 170px;
+    border-radius: 5px;
+    box-shadow: var(--MAINshadow);
+    z-index: 10;
+}
+.profile-photo:hover {
+    box-shadow: var(--SECONDARYshadow);
 }
 .about-skills-title {
     font-size: 2em;
@@ -190,6 +198,7 @@ on hover shadow -- box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0
 
 /* beg of footer */
 .footer-wrapper{
+
 
 }
 .footer-contact-title {

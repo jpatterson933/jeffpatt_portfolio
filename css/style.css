@@ -1,0 +1,216 @@
+
+/* overall styling variables created for my css file */
+:root {
+    --MAINshadow: rgb(60 64 67 / 30%) 0px 1px 2px 0px, rgb(60 64 67 / 15%) 0px 1px 3px 1px;
+    --BUTTONcolor: rgb(150, 218, 272);
+    --ASIDEtitles: rgb(150, 218, 272, 0.5);
+    --ASIDEcontent: rgb(177, 226, 250);
+    --ASIDEcontent-title: rgb(128, 223, 255, .07); /*opacity 75%*/
+    --FADEDborder:  1px solid rgb(0, 0, 0, 0.3);
+    --WHITEborder: 1px solid rgb(255,255,255);
+}
+
+/* main wrapper for my page */
+.MAINwrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+/* wrapper for my top navigation bar */
+.NAVwrapper {
+    max-width: 1920px;
+    margin: 0 auto;
+    margin-top: 1.35em;
+}
+
+/* These are the float classes I will use whenever I need to float something right or left */
+.float-left {
+    float: left;
+}
+.float-right {
+    float: right;
+    justify-content: flex-end;
+}
+
+/* beg top nav bar */
+.section_1 {
+    border-bottom: 1px solid black;
+    padding-bottom: 4em;
+}
+.name {
+    background-color: var(--BUTTONcolor);
+    padding: .5em 1.5em;
+    margin-left: 10em;
+    border-radius: 3px;
+    box-shadow: var(--MAINshadow);
+    color: white;
+    font-weight: 400;
+}
+.contactbutton {
+    background-color: var(--BUTTONcolor);
+    padding: .5em 1.5em;
+    margin-right: 10em;
+    border-radius: 3px;
+    box-shadow: var(--MAINshadow);
+    color: white;
+    font-weight: 400;
+}
+.projectsbutton {
+    background-color: var(--BUTTONcolor);
+    padding: .5em 1.5em;
+    margin-right: 10em;
+    border-radius: 3px;
+    box-shadow: var(--MAINshadow);
+    color: white;
+    font-weight: 400;
+}
+.aboutbutton {
+    background-color: var(--BUTTONcolor);
+    padding: .5em 1.5em;
+    margin-right: 10em;
+    border-radius: 3px;
+    box-shadow: var(--MAINshadow);
+    color: white;
+    font-weight: 400;
+}
+/* end nav bar */
+
+
+/* 1st shadow -- box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+on hover shadow -- box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px; */
+ 
+
+/* beg. quote section */
+.quote-box {
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+    max-width: 950px;
+    margin-top: 7%;
+    text-align: center;
+}
+.quote {
+    font-size: 1.75em;
+    font-family: system-ui;
+    font-weight: lighter;
+}
+.author {
+    font-weight: 300;
+    font-family: system-ui;
+    margin-top: .6em;
+    font-size: 1.2em;
+}
+/* end of quote section */
+
+
+/* main body div wrap */
+.main-div-wrap {
+    position: relative;
+    max-width: 1920px;
+}
+
+/* beginning of about section */
+.about {
+    background-color: var(--ASIDEtitles);
+    padding: 0 7em 10em 12em;
+    border-right: 1px solid black;
+    border-bottom: 1px solid black;
+}
+.about-title{
+    color: black;
+    font-size: 70px;
+    margin: 0em 0em 0em -1em;
+    padding: 2.5em 0em 0em 0em;
+}
+.about-skills-title {
+    font-size: 2em;
+    font-weight: 500;
+    background-color: var(--ASIDEcontent-title);
+    text-align: center;
+    color: black;
+    border-bottom: var(--FADEDborder);
+    width: 853px;
+}
+.about-skill-list {
+    font-size: auto;
+    font-family: system-ui;
+    font-weight: 300;
+    background-color: var(--ASIDEcontent-title);
+    text-align: center;
+    color: black;
+}
+.li-border {
+    border-bottom: 1px solid rgb(0, 0, 0);
+}
+.about-content-title {
+    color: black;
+    font-size: 30px;
+    font-family: auto;
+    border-bottom: var(--FADEDborder);
+}
+.about-content {
+    background-color: var(--ASIDEcontent);
+    padding: 0em 0em 1.3em 0em;
+    max-width: 853px;
+    height: 249px;
+    font-family: system-ui;
+    font-weight: 300;
+    text-align: center;
+    border-bottom: 1px solid black;
+}
+/* end of about section */
+
+
+/* project section starts here */
+.project-div-wrap {
+    display: flex;
+    position: relative;
+    
+}
+.project {
+    background-color: var(--ASIDEtitles);
+    padding: 0 5.7em 10em 5.75em;
+    border-right: 1px solid black;
+}
+.aside-project-title{
+    color: black;
+    font-size: 70px;
+    margin: 0em 0em 0em 0em;
+    padding: 2.5em 0em 0em 0em;
+}
+.project-card1 {
+    float: left;
+    background-color: var(--ASIDEtitles);
+    border: var(--FADEDborder);
+    text-align: center;
+    width: 26.55em;
+    height: 12.88em;
+}
+/* end of project section */
+
+/* beg of footer */
+.footer-wrapper{
+
+}
+.footer-contact-title {
+    border: var(--FADEDborder);
+    text-align: center;
+    font-size: 3.5em;
+    background-color: var(--ASIDEcontent-title);
+    margin: 5px 6% 5px 6%;
+    float: left;
+    width: 20em;
+}
+.footer-button-display {
+    margin-left: 3em;
+}
+.footer-button {
+    float: left;
+    height: 2em;
+    border: var(--FADEDborder);
+    background-color: var(--BUTTONcolor);
+    color: white;
+    width: 24%;
+    margin: 0 1px 5px 1px;
+    box-shadow: var(--MAINshadow);
+}

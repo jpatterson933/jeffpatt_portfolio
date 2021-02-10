@@ -20,7 +20,6 @@
 /* wrapper for my top navigation bar */
 .NAVwrapper {
     max-width: 1920px;
-    margin: 0 auto;
     margin-top: 1.35em;
 }
 
@@ -38,11 +37,12 @@ a {
     color: white;
 }
 
-
 /* beg top nav bar */
 .section_1 {
-    border-bottom: 1px solid black;
-    padding-bottom: 4em;
+    padding-bottom: 5em;
+    width: auto;
+    margin-top: 1.5em;
+    margin: 0 auto;
 }
 .name {
     background-color: var(--BUTTONcolor);
@@ -57,11 +57,11 @@ a {
 .headerbutton {
     background-color: var(--BUTTONcolor);
     padding: .5em 1.5em;
-    margin-right: 10em;
     border-radius: 3px;
     box-shadow: var(--MAINshadow);
     color: white;
     font-weight: 400;
+    margin: 0 2em;
 }
 .headerbutton:hover {
     box-shadow: var(--SECONDARYshadow);
@@ -87,28 +87,38 @@ on hover shadow -- box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0
     font-size: 1.75em;
     font-family: system-ui;
     font-weight: lighter;
+    width: 10em;
+    margin-top: 4em;
+    margin: 0 auto;
 }
 .author {
     font-weight: 300;
     font-family: system-ui;
     margin-top: .6em;
     font-size: 1.2em;
+    width: 4.7em;
+    margin: 0 auto;
 }
 /* end of quote section */
 
 
 /* main body div wrap */
-.main-div-wrap {
-    position: relative;
-    max-width: 1920px;
+.about-div-wrap {
+    display: flex;
+    flex-grow: 1;
 }
 
 /* beginning of about section */
+
+.about-section {
+    flex-grow: 1;
+}
 .about {
     background-color: var(--ASIDEtitles);
     padding: 0 6em 3em 12em;
     border-right: 1px solid black;
     border-bottom: 1px solid black;
+    width: 9em;
 }
 .about-title{
     color: black;
@@ -137,7 +147,7 @@ on hover shadow -- box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0
     text-align: center;
     color: black;
     border-bottom: var(--FADEDborder);
-    width: 853px;
+    margin: 0 auto;
 }
 .about-skill-list {
     font-size: auto;
@@ -146,6 +156,7 @@ on hover shadow -- box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0
     background-color: var(--ASIDEcontent-title);
     text-align: center;
     color: black;
+    margin: 0 auto;
 }
 .li-border {
     border-bottom: 1px solid rgb(0, 0, 0);
@@ -172,7 +183,7 @@ on hover shadow -- box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0
 /* project section starts here */
 .project-div-wrap {
     display: flex;
-    position: relative;
+    flex-grow: 1;
     
 }
 .project {
@@ -209,6 +220,7 @@ on hover shadow -- box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0
     margin: 5px 6% 5px 6%;
     float: left;
     width: 20em;
+    border-radius: 5px;
 }
 .footer-button-display {
     margin-left: 3em;
@@ -222,4 +234,11 @@ on hover shadow -- box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0
     width: 24%;
     margin: 0 1px 5px 1px;
     box-shadow: var(--MAINshadow);
+    border-radius: 3px;
+}
+
+
+/* media querie for ipad */
+@media only screen and (max-device-width: 1024px) {
+
 }

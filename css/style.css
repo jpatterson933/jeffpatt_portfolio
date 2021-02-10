@@ -107,7 +107,7 @@ on hover shadow -- box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0
 /* main body div wrap */
 .about-div-wrap {
     display: flex;
-    flex-grow: 1;
+    flex-direction: row;
 }
 
 /* beginning of about section */
@@ -272,5 +272,31 @@ on hover shadow -- box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0
 
 /* media querie for ipad */
 @media only screen and (max-device-width: 1024px) {
+    .about-div-wrap {
+        display: flex;
+        flex-direction: column;
+        flex-shrink: 0;
+    }
+    .about-skills-title {
+        min-width: 434px;
+    }
+    .about-skill-list {
+        min-width: 434px;
+    }
+    .about-content {
+        min-width: 434px;
+    }
+    .about-content-title {
+        min-width: 434px;
+    }
+    .about-text {
+        min-width: 434px;
+    }
+    .project-div-wrap {
+        min-width: 434px;
+    }
+    .aside-project-title {
+        min-width: 434px;
+    }
 
 }

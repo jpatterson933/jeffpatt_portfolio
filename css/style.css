@@ -39,7 +39,7 @@ a {
 
 /* beg top nav bar */
 .section_1 {
-    padding-bottom: 5em;
+    padding-bottom: 10em;
     width: auto;
     margin-top: 1.5em;
     margin: 0 auto;
@@ -84,10 +84,12 @@ on hover shadow -- box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0
     text-align: center;
 }
 .quote {
+
     font-size: 1.75em;
     font-family: system-ui;
     font-weight: lighter;
     width: 10em;
+    padding-top: 4em;
     margin-top: 4em;
     margin: 0 auto;
 }
@@ -116,16 +118,21 @@ on hover shadow -- box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0
 .about {
     background-color: var(--ASIDEtitles);
     padding: 0 6em 3em 12em;
+    border-top: 1px solid black;
     border-right: 1px solid black;
     border-bottom: 1px solid black;
     width: 9em;
 }
 .about-title{
-    color: black;
+    color: white;
     font-size: 70px;
     margin: 0em 0em 0em -1em;
     padding-left: 0px;
     padding-top: 27px;
+    font-style: italic;
+}
+.about-title:hover {
+    color: black;
 }
 .profile-photo {
     padding: 1em;
@@ -146,6 +153,7 @@ on hover shadow -- box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0
     background-color: var(--ASIDEcontent-title);
     text-align: center;
     color: black;
+    border-top: 1px solid black;
     border-bottom: var(--FADEDborder);
     margin: 0 auto;
 }
@@ -157,6 +165,9 @@ on hover shadow -- box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0
     text-align: center;
     color: black;
     margin: 0 auto;
+}
+.about-skill-list:hover {
+    font-weight: 400;
 }
 .li-border {
     border-bottom: 1px solid rgb(0, 0, 0);
@@ -176,6 +187,12 @@ on hover shadow -- box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0
     font-weight: 300;
     text-align: center;
     border-bottom: 1px solid black;
+    min-width: 400px;
+}
+
+.about-content:hover {
+    font-weight: 400;
+    
 }
 /* end of about section */
 
@@ -183,33 +200,47 @@ on hover shadow -- box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0
 /* project section starts here */
 .project-div-wrap {
     display: flex;
-    flex-grow: 1;
+    flex-direction: column;
     
 }
 .project {
+    width: 100%;
     background-color: var(--ASIDEtitles);
-    padding: 0 5.7em 10em 5.75em;
     border-right: 1px solid black;
 }
 .aside-project-title{
-    color: black;
-    font-size: 70px;
-    margin: 0em 0em 0em 0em;
-    padding: 2.5em 0em 0em 0em;
+    color: white;
+    font-size: 75px;
+    height: 2.5em;
+    width: auto;
+    margin: auto auto;
+    text-align: center;
+    line-height: 2.5em;
+    font-style: italic;
 }
+.aside-project-title:hover {
+    color: black;
+}
+.project-card-aside {
+    display: flex;
+}
+
 .project-card1 {
     float: left;
     background-color: var(--ASIDEtitles);
     border: var(--FADEDborder);
     text-align: center;
-    width: 26.55em;
-    height: 12.88em;
+    width: 15em;
+    height: 15em;
+    margin: 0 auto;
+    line-height: 15em;
 }
 /* end of project section */
 
 /* beg of footer */
 .footer-wrapper{
-
+    width: 100%;
+    height: 10em;
 
 }
 .footer-contact-title {
@@ -217,11 +248,12 @@ on hover shadow -- box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0
     text-align: center;
     font-size: 3.5em;
     background-color: var(--ASIDEcontent-title);
-    margin: 5px 6% 5px 6%;
-    float: left;
+    margin: 5px 6%;
     width: 20em;
     border-radius: 5px;
 }
+
+
 .footer-button-display {
     margin-left: 3em;
 }

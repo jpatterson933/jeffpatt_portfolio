@@ -182,7 +182,7 @@ on hover shadow -- box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0
     background-color: var(--ASIDEcontent);
     padding: 0em 0em 1.3em 0em;
     max-width: 853px;
-    height: 249px;
+    height: 249.5px;
     font-family: system-ui;
     font-weight: 300;
     text-align: center;
@@ -206,7 +206,8 @@ on hover shadow -- box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0
 .project {
     width: 100%;
     background-color: var(--ASIDEtitles);
-    border-right: 1px solid black;
+    border-bottom: 1px solid black;
+    
 }
 .aside-project-title{
     color: white;
@@ -226,48 +227,73 @@ on hover shadow -- box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0
 }
 
 .project-card1 {
+    color: white;
+    font-size: 2em;
     float: left;
     background-color: var(--ASIDEtitles);
     border: var(--FADEDborder);
     text-align: center;
-    width: 15em;
-    height: 15em;
-    margin: 0 auto;
-    line-height: 15em;
+    width: 11em;
+    height: 6em;
+    margin: 1em;
+    line-height: 6em;
+    box-shadow: var(--MAINshadow);
+    
 }
+.project-card1:hover {
+    box-shadow: var(--SECONDARYshadow);
+    font-size: 2em;
+    color: black;
+    font-style: italic;
+    font-weight: 400;
+    transform: scale(1.2);
+}
+
 /* end of project section */
 
 /* beg of footer */
 .footer-wrapper{
-    width: 100%;
-    height: 10em;
+    width: 71%;
+    height: 20em;
+    margin: 0 auto;
 
 }
 .footer-contact-title {
     border: var(--FADEDborder);
     text-align: center;
-    font-size: 3.5em;
+    font-size: 4.5em;
     background-color: var(--ASIDEcontent-title);
-    margin: 5px 6%;
-    width: 20em;
+    margin: 0 auto;
+    width: 100%;
     border-radius: 5px;
+    box-shadow: var(--MAINshadow);
+    color: var(--BUTTONcolor);
+    font-style: italic;
+}
+.footer-contact-title:hover {
 }
 
 
 .footer-button-display {
-    margin-left: 3em;
+    display: flex;
+    flex-direction: column;
 }
 .footer-button {
-    float: left;
-    height: 2em;
     border: var(--FADEDborder);
     background-color: var(--BUTTONcolor);
     color: white;
-    width: 24%;
-    margin: 0 1px 5px 1px;
+    margin: 1em auto;
+    width: 100%;
     box-shadow: var(--MAINshadow);
     border-radius: 3px;
+    padding: 1em;
+    font-size: 2em;
 }
+.footer-button:hover {
+    box-shadow: var(--SECONDARYshadow);
+    transform: scale(1.2);
+}
+
 
 
 /* media querie for ipad */

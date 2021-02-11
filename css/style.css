@@ -1,5 +1,5 @@
 
-/* overall styling variables created for my css file */
+/* styling varaiables for shadows, color scheme of pages, and border */
 :root {
     --MAINshadow: rgb(60 64 67 / 30%) 0px 1px 2px 0px, rgb(60 64 67 / 15%) 0px 1px 3px 1px;
     --SECONDARYshadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
@@ -11,50 +11,41 @@
     --WHITEborder: 1px solid rgb(255,255,255);
 }
 
-/* main wrapper for my page */
+/* this class changes all links no matter what the interaction to white*/
+a {
+    color: white;
+}
+/*this class gives a bit of style to the links when they are hovered on NOT the buttons themslevs but just
+the text of the links*/
+a:hover {
+    color: black;
+    font-style: italic;
+}
+
+/* main wrapper for my navigation section, about section and projects section*/
+/* the main wrapper does not include the footer section */
 .MAINwrapper {
     display: flex;
     flex-direction: column;
 }
 
-/* wrapper for my top navigation bar */
+/* this class is the wrapper for my top navigation bar and the buttons within it. */
 .NAVwrapper {
+    display: flex;
     max-width: 1920px;
     margin-top: 1.35em;
-}
-
-/* These are the float classes I will use whenever I need to float something right or left */
-.float-left {
-    float: left;
-}
-.float-right {
-    float: right;
-    justify-content: flex-end;
-}
-
-/* link classes to adjust link formating */
-a {
-    color: white;
-}
-
-/* beg top nav bar */
-.section_1 {
-    padding-bottom: 10em;
-    width: auto;
-    margin-top: 1.5em;
+    width: 100%;
     margin: 0 auto;
 }
-.name {
-    background-color: var(--BUTTONcolor);
-    padding: .5em 1.5em;
-    margin-left: 10em;
-    border-radius: 3px;
-    box-shadow: var(--MAINshadow);
-    color: white;
-    font-weight: 400;
+/* this class wraps the top section of the nav bar */
+.top-nav-wrap {
+    padding-bottom: 10em;
+    margin-top: 1.5em;
+    margin: 0 auto;
+    width: 100%;
 }
-
-.headerbutton {
+/* this class styles the bar buttons */
+.nav-button {
     background-color: var(--BUTTONcolor);
     padding: .5em 1.5em;
     border-radius: 3px;
@@ -63,19 +54,14 @@ a {
     font-weight: 400;
     margin: 0 2em;
 }
-.headerbutton:hover {
+/* when the user hovers over the navigation buttons, they will take on these css styling properties */
+.nav-button:hover {
     box-shadow: var(--SECONDARYshadow);
     transform: scale(1.5);
 }
-/* end nav bar */
-
-
-/* 1st shadow -- box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
-on hover shadow -- box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px; */
  
-
-/* beg. quote section */
-.quote-box {
+/*bottom navigation section*/
+.bottom-nav-wrap {
     position: relative;
     width: 100%;
     margin: 0 auto;
@@ -84,7 +70,6 @@ on hover shadow -- box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0
     text-align: center;
 }
 .quote {
-
     font-size: 1.75em;
     font-family: system-ui;
     font-weight: lighter;
@@ -101,20 +86,16 @@ on hover shadow -- box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0
     width: 4.7em;
     margin: 0 auto;
 }
-/* end of quote section */
+/*END OF NAVIGATION HEADER SECTION */
 
 
-/* main body div wrap */
+/* BEGINNING OF ABOUT SECTION */
+/* this class wraps around the entire about section */
 .about-div-wrap {
     display: flex;
     flex-direction: row;
 }
 
-/* beginning of about section */
-
-.about-section {
-    flex-grow: 1;
-}
 .about {
     background-color: var(--ASIDEtitles);
     padding: 0 6em 3em 12em;
@@ -201,15 +182,16 @@ on hover shadow -- box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0
 .project-div-wrap {
     display: flex;
     flex-direction: column;
-    
 }
-.project {
+/* this class wraps my projects title */
+.project-title-wrap {
     width: 100%;
     background-color: var(--ASIDEtitles);
     border-bottom: 1px solid black;
     
 }
-.aside-project-title{
+/* this class will style the title PROJECT */
+.project-title{
     color: white;
     font-size: 75px;
     height: 2.5em;
@@ -219,14 +201,15 @@ on hover shadow -- box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0
     line-height: 2.5em;
     font-style: italic;
 }
-.aside-project-title:hover {
+.project-title:hover {
     color: black;
 }
-.project-card-aside {
+/* this class wraps my project cards giving them flex properties */
+.project-card-wrap {
     display: flex;
 }
-
-.project-card1 {
+/* this class will style my project cards */
+.project-card {
     color: white;
     font-size: 2em;
     float: left;
@@ -238,9 +221,9 @@ on hover shadow -- box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0
     margin: 1em;
     line-height: 6em;
     box-shadow: var(--MAINshadow);
-    
 }
-.project-card1:hover {
+/* hover properties for project cards */
+.project-card:hover {
     box-shadow: var(--SECONDARYshadow);
     font-size: 2em;
     color: black;
@@ -248,16 +231,16 @@ on hover shadow -- box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0
     font-weight: 400;
     transform: scale(1.2);
 }
+/* END OF PROJECT SECTION */
 
-/* end of project section */
-
-/* beg of footer */
+/* BEGINNING OF FOOTER */
+/* this class wraps the entire footer */
 .footer-wrapper{
     width: 71%;
     height: 20em;
     margin: 0 auto;
-
 }
+/* this class styles the h1 footer class with CONTACT */
 .footer-contact-title {
     border: var(--FADEDborder);
     text-align: center;
@@ -273,11 +256,12 @@ on hover shadow -- box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0
 .footer-contact-title:hover {
 }
 
-
-.footer-button-display {
+/* this class wraps my buttons giving them flex properties */
+.footer-button-wrap {
     display: flex;
     flex-direction: column;
 }
+/* this class styles all buttons in the footer */
 .footer-button {
     border: var(--FADEDborder);
     background-color: var(--BUTTONcolor);
@@ -289,6 +273,7 @@ on hover shadow -- box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0
     padding: 1em;
     font-size: 2em;
 }
+/* hover styleing for the buttons in footer */
 .footer-button:hover {
     box-shadow: var(--SECONDARYshadow);
     transform: scale(1.2);
@@ -296,8 +281,8 @@ on hover shadow -- box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0
 
 
 
-/* media querie for ipad */
-@media only screen and (max-device-width: 1024px) {
+/* media querie to adjust the elements if the screen size gets below 1024px*/
+@media only screen and (max-width: 1024px) {
     .about-div-wrap {
         display: flex;
         flex-direction: column;
@@ -321,7 +306,7 @@ on hover shadow -- box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0
     .project-div-wrap {
         min-width: 434px;
     }
-    .aside-project-title {
+    .project-title {
         min-width: 434px;
     }
 

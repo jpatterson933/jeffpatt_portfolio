@@ -4,31 +4,41 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- here i have a reset css style sheet to reset anything that has been done by the browser
+    and i have my main css style sheet that will style my webpage -->
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/style.css">
 
-    <title>Document</title>
+    <title>Jeff's Portfolio</title>
 </head>
 <body>
+    <!-- This is my main class that will wrap around my entire webpage EXCEPT for the footer which will carry
+    my contact information-->
     <main class="MAINwrapper">
-        <section class="section_1">
-            <nav class="NAVwrapper">
+        <!-- This section wraps around my entire header -->
+        <section class="top-nav-wrap">
+            <!-- this navWrapper wraps around the top part of my header and carries the buttons within it -->
+            <nav>
+                <!-- list style here gets ride of any styling the ul tag will automatically render -->
                 <ul style="list-style: none;">
-                    <li class="float-left"><button class="headerbutton"><a href="#about-id-link">Jeffery W. Patterson</a></button></li>
-                    <li class="float-left"><button class="headerbutton"><a href="#contact-id-link">Contact</a></button></li>
-                    <li class="float-left"><button class="headerbutton"><a href="#projects-id-link">Projects</a></button></li>
-                    <li class="float-left"><button class="headerbutton"><a href="#about-id-link">About</a></button></li>
+                    <!-- each li here as an a href id link that will allow the user to click on the
+                    button and it will take them to the corresponding section -->
+                    <li><button class="nav-button"><a href="#about-id-link">Jeffery W. Patterson</a></button></li>
+                    <li><button class="nav-button"><a href="#contact-id-link">Contact</a></button></li>
+                    <li><button class="nav-button"><a href="#projects-id-link">Projects</a></button></li>
+                    <li><button class="nav-button"><a href="#about-id-link">About</a></button></li>
                 </ul>
             </nav>
-
-            <article class="quote-box">
+            <!-- this artilce class="quote-box" wraps around the quote I have under the navigation buttons -->
+            <article class="bottom-nav-wrap">
                 <h1 class="quote">"If it was easy, everyone would do it."</h1>
                 <h2 class="author">-unknown-</h2>
             </article>
         </section>
-
+        <!-- this is section will encompass my entire about section which will have two aside elements -->
         <section class="about-div-wrap">
-            <aside class="about-section">
+            <!-- this aside will have a title of about in h1 and a profile photo -->
+            <aside>
                 <div id="about-id-link" class="about">
                     <h1 class="about-title">About</h1>
                         <a href="https://www.instagram.com/i_shred/" target="_blank">
@@ -36,6 +46,8 @@
                         </a>
                 </div>
             </aside>
+            <!-- this aside element will have two divs. one that holds my skills and the one below 
+                that will go into detial about who i am -->
             <aside>
                 <div>
                     <h1 class="about-skills-title">Skills</h1>
@@ -66,28 +78,39 @@
                 </div>
             </aside>
         </section>
+        <!-- this section will have the projects id link that will let the button up top link it here and 
+        then will have class="project-div-wrap" that will wrap around the entire project section -->
         <section id="projects-id-link" class="project-div-wrap">
+            <!-- this is the project title -->
             <aside>
-                <div class="project">
-                    <h1 class="aside-project-title">Projects</h1>
+                <div class="project-title-wrap">
+                    <h1 class="project-title">Projects</h1>
                 </div>
             </aside>
-
-            <aside class="project-card-aside">
+            <!-- this aside will wrap my project cards -->
+            <aside class="project-card-wrap">
                 <div>
-                    <article class="project-card1"><h1>PHD Organics</h1></article>
-                    <article class="project-card1"><h1>Night & Day Consulting</h1></article>
-                    <article class="project-card1"><h1>Project 3</h1></article>
-                    <article class="project-card1"><h1>Project 4</h1></article>
-                    <article class="project-card1"><h1>Project 5</h1></article>
-                    <article class="project-card1"><h1>Project 6</h1></article>
+                    <!-- this articles carry my project cards and links will
+                    be inputed here once I am able to get projects online  -->
+                    <article class="project-card"><h1>Porject 1</h1></article>
+                    <article class="project-card"><h1>Project 2</h1></article>
+                    <article class="project-card"><h1>Project 3</h1></article>
+                    <article class="project-card"><h1>Project 4</h1></article>
+                    <article class="project-card"><h1>Project 5</h1></article>
+                    <article class="project-card"><h1>Project 6</h1></article>
                 </div>
             </aside>
         </section>
     </main>
+    <!-- here the footer will will carry a contact-id-link that, when clicked, the contact button in the nav bar
+    will bring the user to this section -- also the footer-wrapper will wrap around ALL footer elements-->
     <footer id="contact-id-link" class="footer-wrapper">
         <h1 class="footer-contact-title">Contact</h1>
-        <ul style="list-style: none;" class="footer-button-display">
+        <!-- this list is where my contact buttons live 
+        ul was given a list-style of non and a class to wrap around all buttons-->
+        <ul style="list-style: none;" class="footer-button-wrap">
+            <!-- each list item has a button with the same class so buttons will 
+            match -->
             <li><button class="footer-button"><a href="mailto:jpatterson933@ucla.edu">Email</a></button></li>
             <li><button class="footer-button"><a href="https://stackoverflow.com/users/15040337/pjeff61" target="_blank">Stack Overflow</a></button></li>
             <li><button class="footer-button"><a href="https://www.linkedin.com/in/jefferywpatterson/" target="_blank">Linkedin</a></button></li>
@@ -97,3 +120,4 @@
     
 </body>
 </html>
+<!-- this is the end of the html code -->

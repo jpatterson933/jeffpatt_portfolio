@@ -323,6 +323,9 @@ a:hover {
         flex-direction: column;
         flex-shrink: 0;
     }
+    .project-card-wrap {
+        margin: 0 auto;
+    }
     .about-skills-title {
         min-width: 434px;
     }
@@ -343,6 +346,9 @@ a:hover {
     }
     .project-title {
         min-width: 434px;
+    }
+    .project-mediaQ {
+        margin: 0 auto;
     }
 
 }

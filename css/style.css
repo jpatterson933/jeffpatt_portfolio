@@ -296,6 +296,28 @@ a:hover {
 
 /* media querie to adjust the elements if the screen size gets below 1024px*/
 @media only screen and (max-width: 1024px) {
+    .top-nav-wrap {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        flex-shrink: 2;
+    }
+    .nav-button-wrap {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      flex-shrink: 2;
+    }
+    .button-flex {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        flex-shrink: 2;
+    }
+    .nav-button {
+        flex-wrap: wrap;
+    }
+    
     .about-div-wrap {
         display: flex;
         flex-direction: column;

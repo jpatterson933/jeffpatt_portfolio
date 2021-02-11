@@ -1,14 +1,17 @@
 
 /* styling varaiables for shadows, color scheme of pages, and border */
 :root {
-    --MAINshadow: rgb(60 64 67 / 30%) 0px 1px 2px 0px, rgb(60 64 67 / 15%) 0px 1px 3px 1px;
-    --SECONDARYshadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    --MAINshadow: rgb(255, 255, 255, 0.5) 0px 1px 2px 0px, rgb(60 64 67 / 15%) 0px 1px 3px 1px;
+    --SECONDARYshadow: rgba(255, 255, 255, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
     --BUTTONcolor: rgb(150, 218, 272);
     --ASIDEtitles: rgb(150, 218, 272, 0.5);
     --ASIDEcontent: rgb(177, 226, 250);
     --ASIDEcontent-title: rgb(128, 223, 255, .07); /*opacity 75%*/
-    --FADEDborder:  1px solid rgb(0, 0, 0, 0.3);
+    --FADEDborder:  1px solid rgb(255, 255, 255, 0.3);
     --WHITEborder: 1px solid rgb(255,255,255);
+}
+body {
+    background-color: black;
 }
 
 /* this class changes all links no matter what the interaction to white*/
@@ -43,19 +46,18 @@ a:hover {
 .nav-button-wrap {
     display: flex;
     flex-direction: row;
-    flex-shrink: 0;
     justify-content: center;
 
 }
 /* this class styles the bar buttons */
 .nav-button {
     background-color: var(--BUTTONcolor);
-    padding: 1.5em 0.5em;
+    padding: 0.5em 3.5em;
     border-radius: 3px;
     box-shadow: var(--MAINshadow);
     color: white;
     font-weight: 400;
-    margin: 1em auto;
+    margin: 1em 1em;
     width: 100%;
     font-size: 23px;
 }
@@ -71,10 +73,14 @@ a:hover {
     width: 100%;
     margin: 0 auto;
     max-width: 950px;
-    margin-top: 7%;
     text-align: center;
 }
+.button-flex {
+    display: flex;
+    flex-direction: row;
+}
 .quote {
+    color: white;
     font-size: 1.75em;
     font-family: system-ui;
     font-weight: lighter;
@@ -84,6 +90,7 @@ a:hover {
     margin: 0 auto;
 }
 .author {
+    color: white;
     font-weight: 300;
     font-family: system-ui;
     margin-top: .6em;
@@ -104,7 +111,7 @@ a:hover {
 .about {
     background-color: var(--ASIDEtitles);
     padding: 0 6em 3em 12em;
-    border: 1px solid black;
+    border: 1px solid white;
     width: 9em;
 }
 .about-title{
@@ -136,8 +143,8 @@ a:hover {
     font-weight: 500;
     background-color: var(--ASIDEcontent-title);
     text-align: center;
-    color: black;
-    border-top: 1px solid black;
+    color: white;
+    border-top: 1px solid white;
     border-bottom: var(--FADEDborder);
     margin: 0 auto;
 }
@@ -147,7 +154,7 @@ a:hover {
     font-weight: 300;
     background-color: var(--ASIDEcontent-title);
     text-align: center;
-    color: black;
+    color: white;
     margin: 0 auto;
 }
 .about-skill-list:hover {
@@ -157,7 +164,7 @@ a:hover {
     border-bottom: 1px solid rgb(0, 0, 0);
 }
 .about-content-title {
-    color: black;
+    color: white;
     font-size: 30px;
     font-family: auto;
     border-bottom: var(--FADEDborder);
@@ -170,7 +177,7 @@ a:hover {
     font-family: system-ui;
     font-weight: 300;
     text-align: center;
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid white;
     min-width: 400px;
 }
 
@@ -185,12 +192,14 @@ a:hover {
 .project-div-wrap {
     display: flex;
     flex-direction: column;
+    width: 100%;
+    padding-top: 2em;
 }
 /* this class wraps my projects title */
 .project-title-wrap {
     width: 100%;
     background-color: var(--ASIDEtitles);
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid white;
     
 }
 /* this class will style the title PROJECT */
@@ -203,6 +212,7 @@ a:hover {
     text-align: center;
     line-height: 2.5em;
     font-style: italic;
+    border-top: 1px solid white;
 }
 .project-title:hover {
     color: black;

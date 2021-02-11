@@ -4,12 +4,13 @@ Jeffery Patterson's Portfolio
 Repository contains quality readme with description, screenshot, link to deployed application.
 
 # Jeffery William Patterson
-## Installation
-If you would like to install and run this code on your own machine, it can be found here 
-### Heading 3
-#### Heading 4
-##### Heading 5
-###### Heading 6
+
+## Link to deployed application
+
+## Description
+
+## Screenshots
+##
 
 This is where we will begin our readme.
 

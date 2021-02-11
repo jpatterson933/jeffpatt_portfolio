@@ -31,9 +31,8 @@ a:hover {
 
 /* this class is the wrapper for my top navigation bar and the buttons within it. */
 .NAVwrapper {
-    padding-bottom: 10em;
-    margin: 0 auto;
-    width: 50%;
+    display: flex;
+    flex-direction: row;
 }
 /* this class wraps the top section of the nav bar */
 .top-nav-wrap {

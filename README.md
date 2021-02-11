@@ -19,6 +19,7 @@ Here is how I will write links [link name](targetURL "Link title")
 Here is how I will add images/screenshots
 
 ![imagename](TargetUrl)
+![GitHub Logo](/css/assets/nav-bar.jpg)
 
 My webpage can accomplish the list of things below.
 1. Top navigation bar that when clicked, will take you to three sections.

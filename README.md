@@ -19,7 +19,7 @@ Here is how I will write links [link name](targetURL "Link title")
 Here is how I will add images/screenshots
 
 ![imagename](TargetUrl)
-![GitHub Logo](/css/assets/nav-bar.jpg)
+
 
 My webpage can accomplish the list of things below.
 1. Top navigation bar that when clicked, will take you to three sections.
@@ -28,11 +28,11 @@ My webpage can accomplish the list of things below.
     C. Projects when clicked will take the user down to the proejcts section. 
     D. About button will take the user down to the section that is about Jeffery W. Patterson.
 ***
-Navigation Bar Picture in Action: Here is how I will write link ![link](css\assets\navigation bar.jpg")
-2. The Photo on the about section is linked to my instagram page and when it is clicked will take the user there. 
+Navigation Bar Picture in Action: ![Navigation Bar](/css/assets/nav-bar.jpg) the about section is linked to my instagram page and when it is clicked will take the user there. 
 ***
 3. The project section has 6 project cards underneath. Each project card represents a project of the user. THE PROJECT CARDS HAVE NO LINKS CONNECTED AS I HAVE NO PROJECTS.
----
+***
+![aboutSection] (/css/assets/about.jpg)
 those three lines above add a horizontal line through the page
 ***
 the line above should be thicker

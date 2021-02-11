@@ -31,28 +31,34 @@ a:hover {
 
 /* this class is the wrapper for my top navigation bar and the buttons within it. */
 .NAVwrapper {
-    display: flex;
-    max-width: 1920px;
-    margin-top: 1.35em;
-    width: 100%;
+    padding-bottom: 10em;
     margin: 0 auto;
+    width: 50%;
 }
 /* this class wraps the top section of the nav bar */
 .top-nav-wrap {
     padding-bottom: 10em;
     margin-top: 1.5em;
-    margin: 0 auto;
-    width: 100%;
+}
+/* this class encompasses the style ONLY for the nav buttons */
+.nav-button-wrap {
+    display: flex;
+    flex-direction: row;
+    flex-shrink: 0;
+    justify-content: center;
+
 }
 /* this class styles the bar buttons */
 .nav-button {
     background-color: var(--BUTTONcolor);
-    padding: .5em 1.5em;
+    padding: 1.5em 0.5em;
     border-radius: 3px;
     box-shadow: var(--MAINshadow);
     color: white;
     font-weight: 400;
-    margin: 0 2em;
+    margin: 1em auto;
+    width: 100%;
+    font-size: 23px;
 }
 /* when the user hovers over the navigation buttons, they will take on these css styling properties */
 .nav-button:hover {
@@ -99,9 +105,7 @@ a:hover {
 .about {
     background-color: var(--ASIDEtitles);
     padding: 0 6em 3em 12em;
-    border-top: 1px solid black;
-    border-right: 1px solid black;
-    border-bottom: 1px solid black;
+    border: 1px solid black;
     width: 9em;
 }
 .about-title{

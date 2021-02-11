@@ -1,6 +1,10 @@
 # jeffpatt_portfolio
 Jeffery Patterson's Portfolio
 
+Link to deployed webpage [Jeff-Patt-Portfolio](https://jpatterson933.github.io/jeffpatt_portfolio/)
+
+link to repository [Portfolio-repository](https://github.com/jpatterson933/jeffpatt_portfolio)
+
 # Jeffery William Patterson
 
 My webpage can accomplish the list of things below.

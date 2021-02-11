@@ -8,10 +8,6 @@ Repository contains quality readme with description, screenshot, link to deploye
 ## Link to deployed application
 
 ## Description
-
-## Screenshots
-##
-
 This is where we will begin our readme.
 
 Here is how I will write links [link name](targetURL "Link title")
@@ -32,8 +28,9 @@ Navigation Bar Picture in Action: ![Navigation Bar](/css/assets/nav-bar.jpg) the
 ***
 3. The project section has 6 project cards underneath. Each project card represents a project of the user. THE PROJECT CARDS HAVE NO LINKS CONNECTED AS I HAVE NO PROJECTS.
 ***
-![aboutSection] (/css/assets/about.jpg)
-those three lines above add a horizontal line through the page
+![Navigation Bar](/css/assets/about.jpg)
+---
+those three lines above asdd a horizontal line through the page
 ***
 the line above should be thicker
 

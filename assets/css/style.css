@@ -1,0 +1,27 @@
+
+
+/*name styling */
+#name {
+    text-align: center;
+}
+
+/* profile photo styling to keep it small */
+.profile-photo {
+    max-width: 150px;
+    min-width: 150px;
+}
+/* styling of jumbotron */
+.jumbotron {
+    margin: 0;
+    padding: 0;
+}
+/* styling of skills */
+#skills {
+    width: fit-content;
+    float: right;
+    text-align: center;
+}
+/* styling links */
+a {
+    color: white;
+}

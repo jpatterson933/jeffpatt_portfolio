@@ -6,118 +6,125 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- here i have a reset css style sheet to reset anything that has been done by the browser
     and i have my main css style sheet that will style my webpage -->
-    <link rel="stylesheet" href="./css/reset.css">
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./assets/css/reset.css">
+     <!--bootstrap style sheet-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
 
     <title>Jeff's Portfolio</title>
 </head>
 <body>
+    <!-- nav bar  -->
+    <nav class="navbar navbar-dark bg-dark" id="nav">
+        <div class="button-flex">
+            <!--nav bar buttons-->
+            <button class="btn btn-dark row-3"><a href="#projects-id-link">Check Out My Applications!</a></button>
+        </div>
+    </nav>
+    <div class="jumbotron jumbotron-fluid">
+        <div class="container">
+            <h1 class="display-4" id="name">Jeffery W. Patterson</h1>
+            <a href="https://www.instagram.com/i_shred/" target="_blank">
+                <img class="profile-photo col-sm-3" src="./assets/media/profile_photo.jpg" alt="Picture of Jeffery Patterson">
+            </a>
+            <button class="btn btn-dark col-md-3 col-sm-12"><a href="https://github.com/jpatterson933" target="_blank">Github</a></button>
+            <button class="btn btn-dark col-md-3 col-sm-12"><a href="https://www.linkedin.com/in/jefferywpatterson/" target="_blank">LinkedIn</a></button>
+            <button class="btn btn-dark col-md-3 col-sm-12"><a href="assets/media/my-resume.pdf" download>Resume</a></button>
+            <ul class="col-sm-3 col-xs-12 contact-info">
+                <li><a style="color: black" href="mailto: jpatterson933@ucla.edu?subject=I20%would20%like20%to20%hire20%you">jpatterson933@ucla.edu</a></li>
+                <li id="cell">(951) 581-6263</li>
+            </ul>
+            <div class="list-group" id="skills">
+                <a class="list-group-item list-group-item-action"><b>Languages</b></a> 
+                <a class="list-group-item list-group-item-action list-group-item-primary">HTML</a>
+                <a class="list-group-item list-group-item-action list-group-item-primary">CSS</a>
+                <a class="list-group-item list-group-item-action list-group-item-primary">Javscript & Jquery</a>
+                <a class="list-group-item list-group-item-action list-group-item-primary">Bootstrap</a>
+                <a class="list-group-item list-group-item-action list-group-item-primary">Node.js</a>
+            </div>
+        </div>
+    </div>
     <!-- This is my main class that will wrap around my entire webpage EXCEPT for the footer which will carry
     my contact information-->
-    <main class="MAINwrapper">
-        <!-- This section wraps around my entire header -->
-        <section class="top-nav-wrap">
-            <!-- this navWrapper wraps around the top part of my header and carries the buttons within it -->
-            <nav class="nav-button-wrap">
-                <!-- this class is to put the buttons in a row -->
-                <div class="button-flex">
-                    <!-- each button here as an a href id link that will allow the user to click on the
-                    button and it will take them to the corresponding section -->
-                    <button class="nav-button"><a href="#about-id-link">Jeffery W. Patterson</a></button>
-                    <button class="nav-button"><a href="#contact-id-link">Contact</a></button>
-                    <button class="nav-button"><a href="#projects-id-link">Projects</a></button>
-                    <button class="nav-button"><a href="#about-id-link">About</a></button>
-                </div>
-            </nav>
-            <!-- this artilce class="quote-box" wraps around the quote I have under the navigation buttons -->
-            <article class="bottom-nav-wrap">
-                <h1 class="quote">"If it was easy, everyone would do it."</h1>
-                <h2 class="author">-unknown-</h2>
-            </article>
-        </section>
+    <main class="about-wrapper">
         <!-- this is section will encompass my entire about section which will have two aside elements -->
-        <section class="about-div-wrap">
-            <!-- this aside will have a title of about in h1 and a profile photo -->
-            <aside class="about-mediaQ">
-                <div id="about-id-link" class="about">
-                    <h1 class="about-title">About</h1>
-                        <a href="https://www.instagram.com/i_shred/" target="_blank">
-                            <img class="profile-photo" src="./css/assets/profile_photo.jpg" alt="Picture of Jeffery Patterson">
-                        </a>
-                </div>
-            </aside>
+        <section>
             <!-- this aside element will have two divs. one that holds my skills and the one below 
                 that will go into detial about who i am -->
             <aside>
                 <div>
-                    <h1 class="about-skills-title">Skills</h1>
-                    <ul style="list-style: none;" class="about-skill-list">
-                        <li>Ecommerce Operations</li>
-                        <li>Social Media Marketing</li>
-                        <li>Photoshop Graphic Design</li>
-                        <li>Video Editing</li>
-                        <li class="li-border">HTML/CSS</li>
-                    </ul>
-                </div>
-                <div class="about-content">
-                    <h1 class="about-content-title"> A quick story...</h1>
-                    <p class="about-text">
-                        I was born and raised in Southern California. I spent my
-                        life growing up in Beaumont, California and moved to Los
-                        Angeles when I was 23 and have been dwelling ever since.
-                        <br>
-                        <br>
-                        Upon entering LA, I studied and graduated from UCLA. Since graduating,
-                        I have been working in the service industry starting off as
-                        a glass polisher and slowly climbing my way up the industry ladder. Currently,
-                        I am the bar manager at a restaurant in Santa Monica called Elephante and
-                        I am an owner of a CBD company called PHD Organics.
-                        <br>
+                    <h1>A bit about me...</h1>
+                    <p>
+                        I am very skilled in time management, personell management, creating systems and processes from scratch, 
+                        team building, and leadership in any capacity or role I am put in. I am an extremely quick learner, and I am able 
+                        to critically evaluate a problem and find a solution or work with others to come up with one.
+                        <br><br>
+                        The truth of the matter is that I love to code. I find it extremely enjoyable. When my love for coding is 
+                        combined with my skillset, I believe I would make a very 
+                        well rounded front-end devleoper who would thrive in a team environment.
                         <br>
                     </p>
                 </div>
             </aside>
         </section>
-        <!-- this section will have the projects id link that will let the button up top link it here and 
-        then will have class="project-div-wrap" that will wrap around the entire project section -->
-        <section id="projects-id-link" class="project-div-wrap">
-            <!-- this is the project title -->
-            <aside>
-                <div class="project-title-wrap">
-                    <h1 class="project-title">Projects</h1>
+
+        <h1 class="row justify-content-center" id="projects-id-link">My Applications</h1>
+        <div class="row">
+            <!--cards for projects and miniprojects-->
+            <div class="card" style="width: 18rem;">
+                <div id="xp-top-body">
+                    <h5 class="card-title">Xp-Pedia</h5>
+                    <p class="card-text">Create a username, find any game in the world and save it to your profile!
+                         Work the time it takes to beat a game, into your 9-5 schedule.
+                    </p>
                 </div>
-            </aside>
-            <!-- this aside will wrap my project cards -->
-            <aside class="project-card-wrap">
-                <div>
-                    <!-- this articles carry my project cards and links will
-                    be inputed here once I am able to get projects online  -->
-                    <article class="project-card"><h1>Project 1</h1></article>
-                    <article class="project-card"><h1>Project 2</h1></article>
-                    <article class="project-card"><h1>Project 3</h1></article>
-                    <article class="project-card"><h1>Project 4</h1></article>
-                    <article class="project-card"><h1>Project 5</h1></article>
-                    <article class="project-card"><h1>Project 6</h1></article>
+                <ul class="list-group list-group-flush cards-list">
+                    <li class="list-group-item">Find any Game in the world</li>
+                    <li class="list-group-item">Find Game Completion Time</li>
+                    <li class="list-group-item">Beat that game</li>
+                </ul>
+                <div class="col">
+                    <a href="https://github.com/anthonyapicella/XP-pedia" target="_blank" class="row xp-link">GitHub Repository</a>
+                    <a href="https://anthonyapicella.github.io/XP-pedia/" target="_blank" class="row xp-link">Web Application</a>
                 </div>
-            </aside>
-        </section>
+            </div>
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Weather Dashboard</h5>
+                    <p class="card-text">Find the weather for any city in the world, save the city to your dashboard,
+                        and view the weather at any time or find a new city.</p>
+                </div>
+                <ul class="list-group list-group-flush cards-list">
+                    <li class="list-group-item">Weather Reports</li>
+                    <li class="list-group-item">5 Day forecast</li>
+                    <li class="list-group-item">Save favorite City</li>
+                </ul>
+                <div class="col card-body">
+                    <a href="https://github.com/jpatterson933/weather-dashboard" target="_blank" class="row xp-link">Github Repository</a>
+                    <a href="https://jpatterson933.github.io/weather-dashboard/" target="_blank" class="row xp-link">Web Application</a>
+                </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Your Website Here!</h5>
+                    <p class="card-text">Lets discuss your idea, put it on paper, and develop it! 
+                        There are no limitations when you choose me as your developer!</p>
+                </div>
+                <ul class="list-group list-group-flush cards-list">
+                    <li class="list-group-item">Quick Turnaround Time</li>
+                    <li class="list-group-item">Mobile Friendly Interface</li>
+                    <li class="list-group-item">High Quality Design</li>
+                </ul>
+                <div class="col card-body">
+                    <a href="mailto: jpatterson933@ucla.edu?subject=I%would-like-to-hire-you" class="row xp-link">Hire Me</a>
+                </div>
+            </div>
+        </div>
     </main>
-    <!-- here the footer will will carry a contact-id-link that, when clicked, the contact button in the nav bar
-    will bring the user to this section -- also the footer-wrapper will wrap around ALL footer elements-->
-    <footer id="contact-id-link" class="footer-wrapper">
-        <h1 class="footer-contact-title">Contact</h1>
-        <!-- this list is where my contact buttons live 
-        ul was given a list-style of non and a class to wrap around all buttons-->
-        <ul style="list-style: none;" class="footer-button-wrap">
-            <!-- each list item has a button with the same class so buttons will 
-            match -->
-            <li><button class="footer-button"><a href="mailto:jpatterson933@ucla.edu">Email</a></button></li>
-            <li><button class="footer-button"><a href="https://stackoverflow.com/users/15040337/pjeff61" target="_blank">Stack Overflow</a></button></li>
-            <li><button class="footer-button"><a href="https://www.linkedin.com/in/jefferywpatterson/" target="_blank">Linkedin</a></button></li>
-            <li><button class="footer-button"><a href="https://github.com/jpatterson933" target="_blank">Github</a></button></li>
-        </ul>
-    </footer>
-    
+    <!--jquery script-->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <!--my javascript -->
+    <script src="assets/js/script.js"></script>
 </body>
 </html>
 <!-- this is the end of the html code -->

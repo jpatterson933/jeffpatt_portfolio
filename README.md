@@ -8,7 +8,9 @@
 
 ## [Video of Portfolio in Action](https://youtu.be/FbibZo-dQ5Q)
 
-## ![Mobile Friendly Design](./media/Mobile-Friendly-Interface.gif)
+## Mobile Friendly Design
+
+## ![Mobile Friendly Design of Profile](./assets/media/Mobile-Friendly-Interface.gif)
 
 ## [Deployed Application](https://jpatterson933.github.io/jeffpatt_portfolio/)
 

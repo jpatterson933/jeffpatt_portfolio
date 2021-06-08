@@ -63,9 +63,10 @@ li {
     text-align: center;
 }
 
-#xp-top-body {
-    padding: 1.25em;
-
+.descrip-holder {
+    width: 290px;
+    height: 190px;
+    padding: 1em;
 }
 
 .xp-link, .card-link    {
